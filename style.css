@@ -38,6 +38,7 @@ a {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
+    padding: 0 5px;
 }
 
 .logo {
@@ -411,6 +412,10 @@ a {
 }
 
 @media (max-width: 520px) {
+    .header-inner {
+        align-items: center;
+    }
+    
     .hero {
         min-height: 80vh;
         padding-top: 5.5rem;
