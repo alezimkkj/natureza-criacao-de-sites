@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natureza Viva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo">
+                <img src="logo.png" alt="Logo do site">
+                Natureza Viva
+            </div>
+            <nav class="main-nav">
+                <a href="#sobre">Sobre</a>
+                <a href="#curiosidades">Curiosidades</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-label">Explorar o verde</span>
+            <h1>Respire natureza, sinta leveza.</h1>
+            <p>Uma experiência limpa e envolvente com histórias, dicas e inspiração para o seu dia a dia.</p>
+            <a class="hero-button" href="#contato">Entrar em contato</a>
+        </div>
+    </section>
+
+    <main class="container main-layout">
+        <section class="cards" id="sobre">
+            <article class="card">
+                <h2>Ambiente saudável</h2>
+                <p>Descubra como pequenas escolhas podem transformar seu ambiente em um espaço mais vivo e equilibrado.
+                </p>
+            </article>
+            <article class="card">
+                <h2>Design natural</h2>
+                <p>Descubra como pequenas escolhas podem transformar seu ambiente em um espaço mais vivo e equilibrado.
+                </p>
+            </article>
+            <article class="card">
+                <h2>Conexão real</h2>
+                <p>Curiosidades e notícias sobre a natureza ao alcance, com conteúdo pensado para quem ama estar em
+                    contato com o meio ambiente.</p>
+            </article>
+            <article class="card">
+                <h2>Consciência verde</h2>
+                <p>Dicas práticas para sua rotina, com foco em sustentabilidade, saúde mental e estilo de vida leve.</p>
+            </article>
+        </section>
+
+        <aside class="sidebar" id="curiosidades">
+            <div class="sidebar-card">
+                <h3>Curiosidades</h3>
+                <p>As florestas tropicais cobrem apenas 6% da superfície da Terra, mas abrigam mais da metade das
+                    espécies terrestres.</p>
+            </div>
+            <div class="sidebar-card">
+                <h3>Dicas</h3>
+                <p>Plantas dentro de casa ajudam a reduzir o estresse e melhoram a qualidade do ar em ambientes urbanos.
+                </p>
+            </div>
+            <div class="sidebar-card">
+                <h3>Notícias</h3>
+                <p>Novos projetos de restauração ambiental estão aproximando comunidades locais de áreas verdes
+                    preservadas.</p>
+            </div>
+        </aside>
+    </main>
+
+    <section class="form-section" id="contato">
+        <div class="container form-wrapper">
+            <div class="section-top">
+                <h2>Fale conosco</h2>
+                <p>Envie sua mensagem e receba dicas personalizadas sobre natureza, bem-estar e sustentabilidade.</p>
+            </div>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-grid">
+                    <label class="form-field">
+                        <span>Nome completo *</span>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-field">
+                        <span>CPF</span>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14">
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-field">
+                        <span>Data de nascimento</span>
+                        <input type="date" id="birth" name="birth">
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-field">
+                        <span>E-mail *</span>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-field">
+                        <span>Telefone</span>
+                        <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" maxlength="15">
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-field">
+                        <span>Assunto</span>
+                        <select id="subject" name="subject">
+                            <option value="">Escolha um assunto</option>
+                            <option value="natureza">Natureza</option>
+                            <option value="sustentabilidade">Sustentabilidade</option>
+                            <option value="evento">Evento</option>
+                            <option value="outra">Outro</option>
+                        </select>
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-field full-width">
+                        <span>Mensagem *</span>
+                        <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem"
+                            required></textarea>
+                        <small class="field-error"></small>
+                    </label>
+                    <label class="form-checkbox full-width">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span>Li e aceito os termos de uso.</span>
+                        <small class="field-error"></small>
+                    </label>
+                </div>
+                <button class="submit-button" type="submit">Enviar mensagem</button>
+                <p class="form-status" id="formStatus"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Sobre Nós</h3>
+                <p>Somos um espaço dedicado a compartilhar ideias, curiosidades e ações simples que aproximam você da
+                    natureza.</p>
+            </div>
+            <div>
+                <h3>Contato</h3>
+                <p>email@naturezaviva.com.br</p>
+                <p>+55 (11) 99999-9999</p>
+            </div>
+            <div>
+                <h3>Redes sociais</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37a4 4 0 1 1-7.94 1.12 4 4 0 0 1 7.94-1.12"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        Instagram
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
